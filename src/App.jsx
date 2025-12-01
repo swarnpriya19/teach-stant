@@ -6,19 +6,21 @@ import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Home from './components/Home'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+  function App() {
   return (
-    <div>
-
-    <Navbar />
-    <div className='flex'>
-    <Sidebar />
-    <Home />
+    <div className="App">
+      <div className="app-container">
+         <div>
+            <Navbar />
+              <div className='flex'>
+                  <Sidebar />
+                  <Home />
+              </div>
+        </div>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default App
+export default App;
+ 
